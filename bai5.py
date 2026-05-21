@@ -28,6 +28,7 @@
 
 
 count = 0
+total_student = 0
 
 while True:
     print('=' * 22 , 'MENU' , '=' * 22)
@@ -68,8 +69,13 @@ while True:
                                     break
                             if students < 10:
                                 count += 1
+                            total_student += students
+                        
                     if count == 0:
                         print('LỖI - Vì không có lớp nào bé hơn 10 học viên')
+                        break
+                    else:
+                        print(f'Tổng số học viên:{total_student}')
         case 2:
             print('=' * 22 ,'CÁCH NHẬP DỮ LIỆU' , '=' * 22)
             print('Bạn nhập dữ liệu chi nhánh là nhập các số thỏa mãn điều kiện bé hơn 0')
